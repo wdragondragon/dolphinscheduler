@@ -181,7 +181,7 @@ export function formatParams(data: INodeData): {
     }
   }
 
-  if (data.taskType === 'SQL') {
+  if (data.taskType === 'SQL'|| data.taskType === 'CUSTOM') {
     taskParams.type = data.type
     taskParams.datasource = data.datasource
     taskParams.sql = data.sql
